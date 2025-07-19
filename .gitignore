@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+/vendor/bundle
+
+# Production builds
+/frontend/dist/
+/frontend/.nuxt/
+/frontend/.output/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+/backend/config/database.yml.local
+
+# Logs
+*.log
+/backend/log/*
+/frontend/.nitro/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ruby
+/backend/tmp/
+/backend/coverage/
+
+# Rails
+/backend/config/master.key
+/backend/storage/
+
+# Temporary files
+*.tmp
+*.temp
