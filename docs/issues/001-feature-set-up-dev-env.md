@@ -200,11 +200,24 @@ CMD ["rails", "server", "-b", "0.0.0.0"]
 # Docker環境起動
 docker-compose up -d
 
-# Prepare database
-# データベース準備
+# Check container status
+# コンテナ状態確認
+docker-compose ps
+
+# View logs
+# ログ確認
+docker-compose logs backend
+docker-compose logs frontend
+
+# Prepare database (if needed)
+# データベース準備（必要に応じて）
 docker-compose exec backend rails db:create
 docker-compose exec backend rails db:migrate
 docker-compose exec backend rails db:seed
+
+# Stop Docker environment
+# Docker環境停止
+docker-compose down
 ```
 
 ### 5. Operation Check / 5. 動作確認
@@ -247,9 +260,16 @@ curl http://localhost:3000
 - 開発環境では`username: postgres`, `password: password`を使用
 
 #### 6.3 Port Numbers / 6.3 ポート番号
-- Frontend (Nuxt.js): `8080`
-- Backend (Rails API): `3000`
+- Frontend (Nuxt.js): `8080` (http://localhost:8080)
+- Backend (Rails API): `3000` (http://localhost:3000)
 - PostgreSQL: `5432`
+
+#### 6.4 Docker Service URLs / 6.4 Dockerサービス URL
+When using Docker environment:
+Docker環境使用時：
+- Frontend: http://localhost:8080
+- Backend API: http://localhost:3000/api/v1
+- Database: localhost:5432
 
 ## Definition of Done / 完了条件
 - [ ] Backend (Rails) starts successfully and the initial screen is displayed.
