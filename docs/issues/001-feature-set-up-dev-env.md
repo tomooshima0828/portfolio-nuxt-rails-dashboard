@@ -1,8 +1,8 @@
 # 001-feature-set-up-dev-env / 開発環境のセットアップ
 
 ## Overview / 概要
-This document describes the steps to build a local development environment, start the backend (Rails API) and frontend (Nuxt.js), and display the screen.
-ローカル開発環境を構築し、バックエンド（Rails API）とフロントエンド（Nuxt.js）を起動して、画面が表示されるところまでの手順を記述する。
+This document aims to set up a local development environment, launch both the backend (Rails API) and frontend (Nuxt.js), and verify that the initial screens display correctly. The procedures for achieving this are described below.
+この文書は、ローカル開発環境を構築し、バックエンド（Rails API）とフロントエンド（Nuxt.js）を起動して、初期画面が表示されるところまでを目的とする。そのための手順を以下に記述する。
 
 ## Prerequisites / 必要なツール
 - Node.js (v20 or higher) *For Nuxt 4.0 support
