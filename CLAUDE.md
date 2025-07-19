@@ -59,3 +59,21 @@ bundle exec rspec    # Run tests
 - 仕様書駆動開発を採用
 - グラフ描画スキル習得が目的
 - デモデータを使用して開発
+
+## Docker Commands
+```bash
+# コンテナ起動
+docker-compose up -d
+
+# ログ確認
+docker-compose logs backend
+docker-compose logs frontend
+
+# コンテナ停止
+docker-compose down
+```
+
+## Development URLs (Docker)
+- Frontend: http://localhost:8080
+- Backend API: http://localhost:3000
+- PostgreSQL: localhost:5432
