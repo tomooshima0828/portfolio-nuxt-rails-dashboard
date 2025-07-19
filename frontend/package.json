@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-nuxt-rails-dashboard-frontend",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.2.0",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.0",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.0.0",
+    "@pinia/nuxt": "^0.5.1",
+    "chart.js": "^4.4.0",
+    "vue-chartjs": "^5.3.0",
+    "axios": "^1.6.0"
+  }
+}
