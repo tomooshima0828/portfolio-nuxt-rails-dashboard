@@ -31,6 +31,8 @@ erDiagram
         string name "商品名"
         string category "カテゴリ"
         int price "現在の価格"
+        int popularity "人気度"
+        float rating "評価"
     }
 
     orders ||--|{ order_items : "contains"
